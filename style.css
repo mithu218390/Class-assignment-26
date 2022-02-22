@@ -1,0 +1,286 @@
+/********** RESET CSS START **********/
+body,h1,h2,h3,h4,h5,h6,a,span,p{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.bg-white{
+   border-radius: 30px;
+   font-weight: 700;
+   display: inline-block;
+   padding: 10px 15px;
+   background: #fff !important;
+}
+.header nav a .btn1{
+    position: relative;
+}
+.header nav a .btn1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+/********** RESET CSS END **********/
+
+
+/********** HEADER SECTION START **********/
+.main-header{
+    background:#e7e6e6 ;
+    z-index: 999;
+}
+.main-header img{
+width: 80px;
+}
+
+
+.main-header ul.my-menu li a{
+    color: #6c5c73;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.main-header ul.my-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 5px;
+    top: 55px;
+    background: #9d8fec;
+    transition: .4s;
+}
+  .main-header ul.my-menu li:hover a::after {
+     width: 80%;
+  }
+
+/********** HEADER SECTION END **********/
+
+
+/********** SLIDER SECTION START **********/
+
+.slider{
+    background:#edf6ff ;
+}
+
+
+
+.banner-image {
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: -73px;
+    right: -252px;
+}
+.banner-image img{
+    height: 100%;
+    width: 100%;
+   ;
+}
+.slider a.btn-makeup {
+	display: inline-block;
+	border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    box-shadow: none;
+}
+.slider a.btn-makeup::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: black;
+    border-radius: 50px;
+    transition: .5s;
+    z-index: -1;
+    
+}
+.slider a.btn-makeup:hover::after{
+     width: 100%;
+}
+
+/********** SLIDER SECTION END **********/
+
+
+
+/********** SERVICE SECTION START **********/
+
+.service-section{
+
+}
+
+.service-section .text1 h5{
+    color:#aaa7f2 ;
+}
+.service-section .text1 h1{
+position: relative;
+}
+.service-section .text1 h1::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 36px;
+    left: 5px;
+    top: 94px;
+    background: #9d8fec;
+}
+.service{
+
+}
+.service h3 {
+	font-size: 22px;
+	margin-bottom: 12px;
+}
+
+.service span {
+    height: 60px;
+    width: 60px;
+    background: #5252f0;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 50px 50px 50px 0;
+    position: relative;
+    color: #fff;
+}
+
+.service span::after {
+	content: "";
+	height: 2px;
+	width: 40px;
+	position: absolute;
+	left: 0;
+	top: 65px;
+	background: #9d8fec;
+    transition: .5s;
+}
+.service{
+    transition: .5s;
+}
+.service:hover .card{
+    background: #5252f0;
+    color: #fff !important;
+}
+.service:hover p{
+  
+    color: #fff !important;
+}
+.service:hover span::after{
+    color: #fff !important;
+    width: 60px;
+}
+
+/********** SERVICE SECTION END **********/
+
+
+/********** ABOUT SECTION START **********/
+
+.about{
+    background:linear-gradient(rgba(31, 31, 48, 0.029) ,rgba(22, 22, 55, 0.57) ), url(https://i.ibb.co/cxKxLMS/video-bg.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 220px 0;
+
+}
+.extra-pd{
+    padding: 160px 0 !important;
+}
+.about span {
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba(0, 0, 255, 0.53);
+    line-height: 80px;
+    margin-top: 81px;
+    position: relative;
+}
+.about .animation span i {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+.about{
+    position: relative;
+}
+.about::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 113px;
+    left: 45%;
+    top: 39%;
+    background: rgb(255, 255, 255);
+}
+.about span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation:animated 1.8s ease-out infinite ;
+}
+
+@keyframes animated{
+0%{
+transform: scale(1);
+}
+
+50%{
+    transform: scale(2);
+    opacity: 0.7;
+}
+100%{
+    transform: scale(2.5);
+    opacity: 0;
+}
+
+}
+
+.about span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation:goutam 5s ease-out 2.5s infinite ;
+}
+
+@keyframes goutam{
+0%{
+transform: scale(1);
+}
+
+50%{
+    transform: scale(2);
+    opacity: 0.7;
+}
+100%{
+    transform: scale(2.5);
+    opacity: 0;
+}
+
+}
+
+
+/********** ABOUT SECTION END **********/
